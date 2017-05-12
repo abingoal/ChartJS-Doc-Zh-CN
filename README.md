@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# ChartJS 中文文档
 
-You can use the [editor on GitHub](https://github.com/abingoal/ChartJS-Doc-Zh-CN/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+本文档是翻译自[ChartJS](https://github.com/chartjs/Chart.js)官方仓库中的英文说明文档。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+文档还在翻译中...
 
-### Markdown
+[临时预览地址](http://chartjs-doc.abingoal.com/charts/line.html)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 翻译进度
+[x] 入门
+[x] 概览
+[ ] 图表配置
+[ ] Charts
+[ ] 坐标轴
+[ ] 开发者
+[ ] 补充说明
 
-```markdown
-Syntax highlighted code block
+## 说明
+由于水平有限，文档翻译中难免会有纰漏或词不达意，如有好的建议或意见，请提交PR
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abingoal/ChartJS-Doc-Zh-CN/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
