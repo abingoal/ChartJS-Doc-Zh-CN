@@ -1,6 +1,6 @@
 # ChartJS 中文文档
 
-本文档是翻译自[ChartJS](https://github.com/chartjs/Chart.js)官方仓库中的英文说明文档。
+本文档是翻译自[ChartJS](https://github.com/chartjs/Chart.js)官方仓库中的英文说明文档,版本为2.5.0。
 
 文档还在翻译中...
 
