@@ -4,7 +4,7 @@
 
 > 文档还在翻译中...
 
-[临时预览地址](http://chartjs-doc.abingoal.com/charts/line.html)
+[临时预览地址](http://chartjs-doc.abingoal.com/)
 
 ## 翻译进度
 - [x] 入门
