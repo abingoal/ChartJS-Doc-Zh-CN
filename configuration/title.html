@@ -839,17 +839,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="title">Title</h1>
-<p>The chart title defines text to draw at the top of the chart.</p>
-<h2 id="title-configuration">Title Configuration</h2>
+                                <h1 id="&#x6807;&#x9898;">&#x6807;&#x9898;</h1>
+<p>&#x56FE;&#x8868;&#x6807;&#x9898;&#x5B9A;&#x4E49;&#x8981;&#x5728;&#x56FE;&#x8868;&#x9876;&#x90E8;&#x7ED8;&#x5236;&#x7684;&#x6587;&#x672C;&#x3002;</p>
+<h2 id="&#x6807;&#x9898;&#x914D;&#x7F6E;">&#x6807;&#x9898;&#x914D;&#x7F6E;</h2>
 <p>The title configuration is passed into the <code>options.title</code> namespace. The global options for the chart title is defined in <code>Chart.defaults.global.title</code>.</p>
+<p>&#x6807;&#x9898;&#x5728;<code>options.title</code>&#x4E2D;&#x914D;&#x7F6E;&#x3002;&#x56FE;&#x8868;&#x6807;&#x9898;&#x7684;&#x5168;&#x5C40;&#x9009;&#x9879;&#x5728;<code>Chart.defaults.global.title</code>&#x4E2D;&#x5B9A;&#x4E49;&#x3002;</p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
 </tr>
 </thead>
 <tbody>
@@ -857,62 +858,62 @@
 <td><code>display</code></td>
 <td><code>Boolean</code></td>
 <td><code>false</code></td>
-<td>is the title shown</td>
+<td>&#x662F;&#x5426;&#x663E;&#x793A;&#x6807;&#x9898;</td>
 </tr>
 <tr>
 <td><code>position</code></td>
 <td><code>String</code></td>
 <td><code>&apos;top&apos;</code></td>
-<td>Position of title. <a href="#position">more...</a></td>
+<td>&#x6807;&#x9898;&#x672A;&#x77E5;<a href="#position">&#x66F4;&#x591A;...</a></td>
 </tr>
 <tr>
 <td><code>fontSize</code></td>
 <td><code>Number</code></td>
 <td><code>12</code></td>
-<td>Font size</td>
+<td>&#x5B57;&#x4F53;&#x5927;&#x5C0F;</td>
 </tr>
 <tr>
 <td><code>fontFamily</code></td>
 <td><code>String</code></td>
 <td><code>&quot;&apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif&quot;</code></td>
-<td>Font family for the title text.</td>
+<td>&#x5B57;&#x4F53;&#x96C6;</td>
 </tr>
 <tr>
 <td><code>fontColor</code></td>
 <td>Color</td>
 <td><code>&apos;#666&apos;</code></td>
-<td>Font color</td>
+<td>&#x5B57;&#x4F53;&#x989C;&#x8272;</td>
 </tr>
 <tr>
 <td><code>fontStyle</code></td>
 <td><code>String</code></td>
 <td><code>&apos;bold&apos;</code></td>
-<td>Font style</td>
+<td>&#x5B57;&#x4F53;&#x6837;&#x5F0F;</td>
 </tr>
 <tr>
 <td><code>padding</code></td>
 <td><code>Number</code></td>
 <td><code>10</code></td>
-<td>Number of pixels to add above and below the title text.</td>
+<td>&#x6807;&#x9898;&#x6587;&#x672C;&#x4E0A;&#x4E0B;&#x65B9;&#x95F4;&#x8DDD;</td>
 </tr>
 <tr>
 <td><code>text</code></td>
 <td><code>String</code></td>
 <td><code>&apos;&apos;</code></td>
-<td>Title text ti display</td>
+<td>&#x6807;&#x9898;&#x6587;&#x5B57;</td>
 </tr>
 </tbody>
 </table>
-<h3 id="position">Position</h3>
-<p>Possible title position values are:</p>
+<h3 id="&#x672A;&#x77E5;">&#x672A;&#x77E5;</h3>
+<p>&#x53EF;&#x7528;&#x7684;&#x6807;&#x9898;&#x4F4D;&#x7F6E;&#x4E3A;:</p>
 <ul>
 <li><code>&apos;top&apos;</code></li>
 <li><code>&apos;left&apos;</code></li>
 <li><code>&apos;bottom&apos;</code></li>
 <li><code>&apos;right&apos;</code></li>
 </ul>
-<h2 id="example-usage">Example Usage</h2>
-<p>The example below would enable a title of &apos;Custom Chart Title&apos; on the chart that is created.</p>
+<h2 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;">&#x793A;&#x4F8B;&#x4EE3;&#x7801;</h2>
+<p>&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#x5C06;&#x5728;&#x521B;&#x5EFA;&#x7684;&#x56FE;&#x8868;&#x4E0A;&#x52A0;&#x4E0A;&#x201C;Custom Chart Title&#x201D;&#x7684;&#x6807;&#x9898;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -967,7 +968,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"标题","level":"1.4.4","depth":2,"next":{"title":"提示","level":"1.4.5","depth":2,"path":"configuration/tooltip.md","ref":"configuration/tooltip.md","articles":[]},"previous":{"title":"图例","level":"1.4.3","depth":2,"path":"configuration/legend.md","ref":"configuration/legend.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"configuration/title.md","mtime":"2017-05-12T06:18:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T03:58:40.618Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"标题","level":"1.4.4","depth":2,"next":{"title":"提示","level":"1.4.5","depth":2,"path":"configuration/tooltip.md","ref":"configuration/tooltip.md","articles":[]},"previous":{"title":"图例","level":"1.4.3","depth":2,"path":"configuration/legend.md","ref":"configuration/legend.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"configuration/title.md","mtime":"2017-05-15T04:07:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T07:49:58.696Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

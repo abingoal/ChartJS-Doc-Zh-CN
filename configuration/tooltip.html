@@ -839,16 +839,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="tooltips">Tooltips</h1>
-<h2 id="tooltip-configuration">Tooltip Configuration</h2>
-<p>The tooltip configuration is passed into the <code>options.tooltips</code> namespace. The global options for the chart tooltips is defined in <code>Chart.defaults.global.tooltips</code>.</p>
+                                <h1 id="&#x5DE5;&#x5177;&#x63D0;&#x793A;">&#x5DE5;&#x5177;&#x63D0;&#x793A;</h1>
+<h2 id="&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x914D;&#x7F6E;">&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x914D;&#x7F6E;</h2>
+<p>&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x914D;&#x7F6E;&#x662F;&#x5728;<code>options.tooltips</code> &#x4E2D;&#x3002;&#x5168;&#x5C40;tooltip&#x914D;&#x7F6E;&#x5728;<code>Chart.defaults.global.tooltips</code>&#x3002;</p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
 </tr>
 </thead>
 <tbody>
@@ -856,235 +856,238 @@
 <td><code>enabled</code></td>
 <td><code>Boolean</code></td>
 <td><code>true</code></td>
-<td>Are tooltips enabled</td>
+<td>&#x63D0;&#x793A;&#x662F;&#x5426;&#x542F;&#x7528;</td>
 </tr>
 <tr>
 <td><code>custom</code></td>
 <td><code>Function</code></td>
 <td><code>null</code></td>
-<td>See <a href="#custom-tooltips">custom tooltip</a> section.</td>
+<td>&#x8BF7;&#x53C2;&#x9605;<a href="#custom-tooltips">&#x81EA;&#x5B9A;&#x4E49;&#x5DE5;&#x5177;&#x63D0;&#x793A;</a></td>
 </tr>
 <tr>
 <td><code>mode</code></td>
 <td><code>String</code></td>
 <td><code>&apos;nearest&apos;</code></td>
-<td>Sets which elements appear in the tooltip. <a href="../general/interactions/modes.html#interaction-modes">more...</a>.</td>
+<td>&#x8BBE;&#x7F6E;&#x54EA;&#x4E9B;&#x5143;&#x7D20;&#x51FA;&#x73B0;&#x5728;&#x63D0;&#x793A;&#x4E2D; <a href="../general/interactions/modes.html#interaction-modes">&#x66F4;&#x591A;...</a>.</td>
 </tr>
 <tr>
 <td><code>intersect</code></td>
 <td><code>Boolean</code></td>
 <td><code>true</code></td>
-<td>if true, the tooltip mode applies only when the mouse position intersects with an element. If false, the mode will be applied at all times.</td>
+<td>&#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x5219;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x6A21;&#x5F0F;&#x4EC5;&#x5728;&#x9F20;&#x6807;&#x4F4D;&#x7F6E;&#x4E0E;&#x5143;&#x7D20;&#x76F8;&#x4EA4;&#x65F6;&#x624D;&#x9002;&#x7528;&#x3002;&#x5982;&#x679C;&#x4E3A;false&#xFF0C;&#x8BE5;&#x6A21;&#x5F0F;&#x5C06;&#x968F;&#x65F6;&#x5E94;&#x7528;&#x3002;</td>
 </tr>
 <tr>
 <td><code>position</code></td>
 <td><code>String</code></td>
 <td><code>&apos;average&apos;</code></td>
-<td>The mode for positioning the tooltip. <a href="#position-modes">more...</a></td>
+<td>&#x63D0;&#x793A;&#x6846;&#x672A;&#x77E5; <a href="#position-modes">&#x66F4;&#x591A;...</a></td>
 </tr>
 <tr>
 <td><code>callbacks</code></td>
 <td><code>Object</code></td>
 <td></td>
-<td>See the <a href="#tooltip-callbacks">callbacks section</a></td>
+<td>&#x53C2;&#x8003; <a href="#tooltip-callbacks">callbacks section</a></td>
 </tr>
 <tr>
 <td><code>itemSort</code></td>
 <td><code>Function</code></td>
 <td></td>
-<td>Sort tooltip items. <a href="#sort-callback">more...</a></td>
+<td>&#x63D0;&#x793A;&#x6761;&#x76EE;&#x6392;&#x5E8F; <a href="#sort-callback">&#x66F4;&#x591A;...</a></td>
 </tr>
 <tr>
 <td><code>filter</code></td>
 <td><code>Function</code></td>
 <td></td>
-<td>Filter tooltip items. <a href="#filter-callback">more...</a></td>
+<td>&#x63D0;&#x793A;&#x6761;&#x76EE;&#x8FC7;&#x6EE4; <a href="#filter-callback">&#x66F4;&#x591A;...</a></td>
 </tr>
 <tr>
 <td><code>backgroundColor</code></td>
 <td>Color</td>
 <td><code>&apos;rgba(0,0,0,0.8)&apos;</code></td>
-<td>Background color of the tooltip.</td>
+<td>&#x63D0;&#x793A;&#x6846;&#x7684;&#x80CC;&#x666F;&#x8272;</td>
 </tr>
 <tr>
 <td><code>titleFontFamily</code></td>
 <td><code>String</code></td>
 <td><code>&quot;&apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif&quot;</code></td>
-<td>title font</td>
+<td>&#x63D0;&#x793A;&#x6807;&#x9898;&#x5B57;&#x4F53;&#x96C6;</td>
 </tr>
 <tr>
 <td><code>titleFontSize</code></td>
 <td><code>Number</code></td>
 <td><code>12</code></td>
-<td>Title font size</td>
+<td>&#x63D0;&#x793A;&#x6807;&#x9898;&#x5B57;&#x4F53;&#x5927;&#x5C0F;</td>
 </tr>
 <tr>
 <td><code>titleFontStyle</code></td>
 <td><code>String</code></td>
 <td><code>&apos;bold&apos;</code></td>
-<td>Title font style</td>
+<td>&#x63D0;&#x793A;&#x6807;&#x9898;&#x5B57;&#x4F53;&#x6837;&#x5F0F;</td>
 </tr>
 <tr>
 <td><code>titleFontColor</code></td>
 <td>Color</td>
 <td><code>&apos;#fff&apos;</code></td>
-<td>Title font color</td>
+<td>&#x63D0;&#x793A;&#x6807;&#x9898;&#x989C;&#x8272;</td>
 </tr>
 <tr>
 <td><code>titleSpacing</code></td>
 <td><code>Number</code></td>
 <td><code>2</code></td>
-<td>Spacing to add to top and bottom of each title line.</td>
+<td>&#x5728;&#x6BCF;&#x4E2A;&#x6807;&#x9898;&#x884C;&#x7684;&#x9876;&#x90E8;&#x548C;&#x5E95;&#x90E8;&#x6DFB;&#x52A0;&#x7A7A;&#x683C;</td>
 </tr>
 <tr>
 <td><code>titleMarginBottom</code></td>
 <td><code>Number</code></td>
 <td><code>6</code></td>
-<td>Margin to add on bottom of title section.</td>
+<td>&#x5728;&#x6807;&#x9898;&#x680F;&#x5E95;&#x90E8;&#x52A0;&#x4E0A;&#x5916;&#x8FB9;&#x8DDD;.</td>
 </tr>
 <tr>
 <td><code>bodyFontFamily</code></td>
 <td><code>String</code></td>
 <td><code>&quot;&apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif&quot;</code></td>
-<td>body line font</td>
+<td>&#x63D0;&#x793A;&#x5185;&#x5BB9;&#x5B57;&#x4F53;&#x96C6;</td>
 </tr>
 <tr>
 <td><code>bodyFontSize</code></td>
 <td><code>Number</code></td>
 <td><code>12</code></td>
-<td>Body font size</td>
+<td>&#x63D0;&#x793A;&#x5185;&#x5BB9;&#x5B57;&#x4F53;&#x5927;&#x5C0F;</td>
 </tr>
 <tr>
 <td><code>bodyFontStyle</code></td>
 <td><code>String</code></td>
 <td><code>&apos;normal&apos;</code></td>
-<td>Body font style</td>
+<td>&#x63D0;&#x793A;&#x5185;&#x5BB9;&#x5B57;&#x4F53;&#x6837;&#x5F0F;</td>
 </tr>
 <tr>
 <td><code>bodyFontColor</code></td>
 <td>Color</td>
 <td><code>&apos;#fff&apos;</code></td>
-<td>Body font color</td>
+<td>&#x63D0;&#x793A;&#x5185;&#x5BB9;&#x5B57;&#x4F53;&#x989C;&#x8272;</td>
 </tr>
 <tr>
 <td><code>bodySpacing</code></td>
 <td><code>Number</code></td>
 <td><code>2</code></td>
-<td>Spacing to add to top and bottom of each tooltip item.</td>
+<td>&#x5728;&#x6BCF;&#x4E2A;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x9879;&#x7684;&#x9876;&#x90E8;&#x548C;&#x5E95;&#x90E8;&#x6DFB;&#x52A0;&#x7A7A;&#x683C;</td>
 </tr>
 <tr>
 <td><code>footerFontFamily</code></td>
 <td><code>String</code></td>
 <td><code>&quot;&apos;Helvetica Neue&apos;, &apos;Helvetica&apos;, &apos;Arial&apos;, sans-serif&quot;</code></td>
-<td>footer font</td>
+<td>&#x9875;&#x811A;&#x5B57;&#x4F53;&#x96C6;</td>
 </tr>
 <tr>
 <td><code>footerFontSize</code></td>
 <td><code>Number</code></td>
 <td><code>12</code></td>
-<td>Footer font size</td>
+<td>&#x9875;&#x811A;&#x5B57;&#x4F53;&#x5927;&#x5C0F;</td>
 </tr>
 <tr>
 <td><code>footerFontStyle</code></td>
 <td><code>String</code></td>
 <td><code>&apos;bold&apos;</code></td>
-<td>Footer font style</td>
+<td>&#x9875;&#x811A;&#x5B57;&#x4F53;&#x6837;&#x5F0F;</td>
 </tr>
 <tr>
 <td><code>footerFontColor</code></td>
 <td>Color</td>
 <td><code>&apos;#fff&apos;</code></td>
-<td>Footer font color</td>
+<td>&#x4E5F;&#x53EB;&#x5B57;&#x4F53;&#x989C;&#x8272;</td>
 </tr>
 <tr>
 <td><code>footerSpacing</code></td>
 <td><code>Number</code></td>
 <td><code>2</code></td>
-<td>Spacing to add to top and bottom of each fotter line.</td>
+<td>&#x5728;&#x6BCF;&#x4E2A;&#x9875;&#x811A;&#x7684;&#x9876;&#x90E8;&#x548C;&#x5E95;&#x90E8;&#x6DFB;&#x52A0;&#x7A7A;&#x683C;</td>
 </tr>
 <tr>
 <td><code>footerMarginTop</code></td>
 <td><code>Number</code></td>
 <td><code>6</code></td>
-<td>Margin to add before drawing the footer.</td>
+<td>&#x5728;&#x7ED8;&#x5236;&#x9875;&#x811A;&#x524D;&#x6DFB;&#x52A0;&#x5916;&#x8FB9;&#x8DDD;</td>
 </tr>
 <tr>
 <td><code>xPadding</code></td>
 <td><code>Number</code></td>
 <td><code>6</code></td>
-<td>Padding to add on left and right of tooltip.</td>
+<td>&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x7684;&#x5DE6;&#x53F3;&#x6DFB;&#x52A0;&#x5185;&#x95F4;&#x8DDD;</td>
 </tr>
 <tr>
 <td><code>yPadding</code></td>
 <td><code>Number</code></td>
 <td><code>6</code></td>
-<td>Padding to add on top and bottom of tooltip.</td>
+<td>&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x9876;&#x90E8;&#x548C;&#x5E95;&#x90E8;&#x6DFB;&#x52A0;&#x5185;&#x95F4;&#x8DDD;</td>
 </tr>
 <tr>
 <td><code>caretPadding</code></td>
 <td><code>Number</code></td>
 <td><code>2</code></td>
-<td>Extra distance to move the end of the tooltip arrow away from the tooltip point.</td>
+<td>&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x7BAD;&#x5934;&#x504F;&#x79FB;&#x91CF;</td>
 </tr>
 <tr>
 <td><code>caretSize</code></td>
 <td><code>Number</code></td>
 <td><code>5</code></td>
-<td>Size, in px, of the tooltip arrow.</td>
+<td>&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x7BAD;&#x5934;&#x5927;&#x5C0F; (px&#x5355;&#x4F4D;)</td>
 </tr>
 <tr>
 <td><code>cornerRadius</code></td>
 <td><code>Number</code></td>
 <td><code>6</code></td>
-<td>Radius of tooltip corner curves.</td>
+<td>&#x5706;&#x89D2;</td>
 </tr>
 <tr>
 <td><code>multiKeyBackground</code></td>
 <td>Color</td>
 <td><code>&apos;#fff&apos;</code></td>
-<td>Color to draw behind the colored boxes when multiple items are in the tooltip</td>
+<td>&#x5F53;&#x591A;&#x4E2A;&#x9879;&#x76EE;&#x4F4D;&#x4E8E;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x4E2D;&#x65F6;&#xFF0C;&#x989C;&#x8272;&#x4F1A;&#x5728;&#x5F69;&#x8272;&#x6846;&#x540E;&#x9762;&#x7ED8;&#x5236;</td>
 </tr>
 <tr>
 <td><code>displayColors</code></td>
 <td><code>Boolean</code></td>
 <td><code>true</code></td>
-<td>if true, color boxes are shown in the tooltip</td>
+<td>&#x5982;&#x679C;&#x4E3A;true&#xFF0C;&#x5219;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x4E2D;&#x4F1A;&#x663E;&#x793A;&#x989C;&#x8272;&#x6846;</td>
 </tr>
 <tr>
 <td><code>borderColor</code></td>
 <td>Color</td>
 <td><code>&apos;rgba(0,0,0,0)&apos;</code></td>
-<td>Color of the border</td>
+<td>&#x8FB9;&#x6846;&#x989C;&#x8272;</td>
 </tr>
 <tr>
 <td><code>borderWidth</code></td>
 <td><code>Number</code></td>
 <td><code>0</code></td>
-<td>Size of the border</td>
+<td>&#x8FB9;&#x6846;&#x5BBD;&#x5EA6;</td>
 </tr>
 </tbody>
 </table>
-<h3 id="position-modes">Position Modes</h3>
-<p> Possible modes are:</p>
+<h3 id="&#x4F4D;&#x7F6E;&#x6A21;&#x5F0F;">&#x4F4D;&#x7F6E;&#x6A21;&#x5F0F;</h3>
+<p> &#x53EF;&#x4F7F;&#x7528;&#x7684;&#x6A21;&#x5F0F;&#x4E3A;</p>
 <ul>
 <li>&apos;average&apos;</li>
 <li>&apos;nearest&apos;</li>
 </ul>
-<p>&apos;average&apos; mode will place the tooltip at the average position of the items displayed in the tooltip. &apos;nearest&apos; will place the tooltip at the position of the element closest to the event position.</p>
-<p>New modes can be defined by adding functions to the Chart.Tooltip.positioners map.</p>
-<h3 id="sort-callback">Sort Callback</h3>
-<p>Allows sorting of <a href="#chart-configuration-tooltip-item-interface">tooltip items</a>. Must implement at minimum a function that can be passed to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank">Array.prototype.sort</a>.  This function can also accept a third parameter that is the data object passed to the chart.</p>
-<h3 id="filter-callback">Filter Callback</h3>
-<p>Allows filtering of <a href="#chart-configuration-tooltip-item-interface">tooltip items</a>. Must implement at minimum a function that can be passed to <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">Array.prototype.filter</a>. This function can also accept a second parameter that is the data object passed to the chart.</p>
-<h2 id="tooltip-callbacks">Tooltip Callbacks</h2>
+<p>&apos;average&apos; &#x6A21;&#x5F0F;&#x5C06;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x653E;&#x5728;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x4E2D;&#x663E;&#x793A;&#x7684;&#x9879;&#x76EE;&#x7684;&#x5E73;&#x5747;&#x4F4D;&#x7F6E;</p>
+<p>&apos;nearest&apos;&#x5C06;&#x628A;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x653E;&#x5728;&#x79BB;&#x4E8B;&#x4EF6;&#x4F4D;&#x7F6E;&#x6700;&#x8FD1;&#x7684;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5411;<code>Chart.Tooltip.positioners</code>&#x6620;&#x5C04;&#x6DFB;&#x52A0;&#x51FD;&#x6570;&#x6765;&#x5B9A;&#x4E49;&#x65B0;&#x6A21;&#x5F0F;</p>
+<h3 id="&#x6392;&#x5E8F;&#x56DE;&#x8C03;">&#x6392;&#x5E8F;&#x56DE;&#x8C03;</h3>
+<p>&#x5141;&#x8BB8;&#x5BF9;<a href="#chart-configuration-tooltip-item-interface">&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x9879;</a>&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7ED9;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank">Array.prototype.sort</a>&#x7684;&#x51FD;&#x6570;&#x3002;&#x6B64;&#x51FD;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4F20;&#x9012;&#x7ED9;&#x56FE;&#x8868;&#x7684;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<h3 id="&#x8FC7;&#x6EE4;&#x56DE;&#x8C03;">&#x8FC7;&#x6EE4;&#x56DE;&#x8C03;</h3>
+<p>&#x5141;&#x8BB8;&#x8FC7;&#x6EE4;<a href="#chart-configuration-tooltip-item-interface">&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x9879;</a>&#x3002;&#x5FC5;&#x987B;&#x81F3;&#x5C11;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x7ED9;<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">Array.prototype.filter</a>&#x7684;&#x51FD;&#x6570;&#x3002;&#x6B64;&#x51FD;&#x6570;&#x4E5F;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4F20;&#x9012;&#x7ED9;&#x56FE;&#x8868;&#x7684;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<h2 id="&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x56DE;&#x8C03;">&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x56DE;&#x8C03;</h2>
+<p>&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x6807;&#x7B7E;&#x914D;&#x7F6E;&#x4F7F;&#x7528;<code>callbacks</code>&#x5173;&#x952E;&#x5B57;,&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x63D0;&#x4F9B;&#x6587;&#x672C;&#x7684;&#x56DE;&#x8C03;&#x3002;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x51FD;&#x6570;&#xFF0C;&#x201C;this&#x201D;&#x5C06;&#x662F;&#x4ECE;<code>Chart.Tooltip</code>&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x7684;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x5BF9;&#x8C61;&#x3002;</p>
 <p>The tooltip label configuration is nested below the tooltip configuration using the <code>callbacks</code> key. The tooltip has the following callbacks for providing text. For all functions, &apos;this&apos; will be the tooltip object created from the Chart.Tooltip constructor.</p>
+<p>&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;<a href="#chart-configuration-tooltip-item-interface">&#x53C2;&#x6570;</a>&#x8C03;&#x7528;&#x6240;&#x6709;&#x51FD;&#x6570;&#xFF1A;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x9879;&#x548C;&#x4F20;&#x9012;&#x7ED9;&#x56FE;&#x8868;&#x7684;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x3002;&#x6240;&#x6709;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x200B;&#x200B;&#x7EC4;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6570;&#x7EC4;&#x88AB;&#x89C6;&#x4E3A;&#x591A;&#x884C;&#x6587;&#x672C;&#x3002;</p>
 <p>All functions are called with the same arguments: a <a href="#chart-configuration-tooltip-item-interface">tooltip item</a> and the data object passed to the chart. All functions must return either a string or an array of strings. Arrays of strings are treated as multiple lines of text.</p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Arguments</th>
-<th>Description</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x63CF;&#x8FF0;</th>
 </tr>
 </thead>
 <tbody>
@@ -1389,7 +1392,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"提示","level":"1.4.5","depth":2,"next":{"title":"元素","level":"1.4.6","depth":2,"path":"configuration/elements.md","ref":"configuration/elements.md","articles":[]},"previous":{"title":"标题","level":"1.4.4","depth":2,"path":"configuration/title.md","ref":"configuration/title.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"configuration/tooltip.md","mtime":"2017-05-12T06:18:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T03:58:40.618Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"提示","level":"1.4.5","depth":2,"next":{"title":"元素","level":"1.4.6","depth":2,"path":"configuration/elements.md","ref":"configuration/elements.md","articles":[]},"previous":{"title":"标题","level":"1.4.4","depth":2,"path":"configuration/title.md","ref":"configuration/title.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"configuration/tooltip.md","mtime":"2017-05-15T07:23:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T07:49:58.696Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
