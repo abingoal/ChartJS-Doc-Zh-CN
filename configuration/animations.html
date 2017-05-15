@@ -839,17 +839,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="animations">Animations</h1>
-<p>Chart.js animates charts out of the box. A number of options are provided to configure how the animation looks and how long it takes</p>
-<h2 id="animation-configuration">Animation Configuration</h2>
-<p>The following animation options are available. The global options for are defined in <code>Chart.defaults.global.animation</code>.</p>
+                                <h1 id="&#x52A8;&#x753B;">&#x52A8;&#x753B;</h1>
+<p>Chart.js&#x5F00;&#x7BB1;&#x5373;&#x7528;&#x52A8;&#x753B;&#x56FE;&#x8868;&#x3002;&#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x9009;&#x9879;&#x6765;&#x914D;&#x7F6E;&#x52A8;&#x753B;&#x7684;&#x5916;&#x89C2;&#x4EE5;&#x53CA;&#x52A8;&#x753B;&#x65F6;&#x95F4;&#x3002;</p>
+<h2 id="&#x52A8;&#x753B;&#x914D;&#x7F6E;">&#x52A8;&#x753B;&#x914D;&#x7F6E;</h2>
+<p>&#x4EE5;&#x4E0B;&#x4E3A;&#x5168;&#x5C40;&#x9009;&#x9879;&#xFF0C;&#x5728;<code>Chart.defaults.global.animation</code>&#x4E2D;&#x5B9A;&#x4E49;&#x3002;</p>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
 </tr>
 </thead>
 <tbody>
@@ -857,30 +857,30 @@
 <td><code>duration</code></td>
 <td><code>Number</code></td>
 <td><code>1000</code></td>
-<td>The number of milliseconds an animation takes.</td>
+<td>&#x52A8;&#x753B;&#x6240;&#x9700;&#x7684;&#x6BEB;&#x79D2;&#x6570;</td>
 </tr>
 <tr>
 <td><code>easing</code></td>
 <td><code>String</code></td>
 <td><code>&apos;easeOutQuart&apos;</code></td>
-<td>Easing function to use. <a href="#easing">more...</a></td>
+<td>Easing <a href="#easing">&#x66F4;&#x591A;...</a></td>
 </tr>
 <tr>
 <td><code>onProgress</code></td>
 <td><code>Function</code></td>
 <td><code>null</code></td>
-<td>Callback called on each step of an animation. <a href="#animation-callbacks">more...</a></td>
+<td>&#x6BCF;&#x4E00;&#x6B65;&#x52A8;&#x753B;&#x7684;&#x56DE;&#x8C03; <a href="#animation-callbacks">&#x66F4;&#x591A;...</a></td>
 </tr>
 <tr>
 <td><code>onComplete</code></td>
 <td><code>Function</code></td>
 <td><code>null</code></td>
-<td>Callback called at the end of an animation. <a href="#animation-callbacks">more...</a></td>
+<td>&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x540E;&#x56DE;&#x8C03; <a href="#animation-callbacks">&#x66F4;&#x591A;...</a></td>
 </tr>
 </tbody>
 </table>
 <h2 id="easing">Easing</h2>
-<p> Available options are:</p>
+<p> &#x53EF;&#x7528;&#x9009;&#x9879;:</p>
 <ul>
 <li><code>&apos;linear&apos;</code></li>
 <li><code>&apos;easeInQuad&apos;</code></li>
@@ -914,33 +914,33 @@
 <li><code>&apos;easeOutBounce&apos;</code></li>
 <li><code>&apos;easeInOutBounce&apos;</code></li>
 </ul>
-<p>See <a href="http://robertpenner.com/easing/" target="_blank">Robert Penner&apos;s easing equations</a>.</p>
-<h2 id="animation-callbacks">Animation Callbacks</h2>
-<p>The <code>onProgress</code> and <code>onComplete</code> callbacks are useful for synchronizing an external draw to the chart animation. The callback is passed a <code>Chart.Animation</code> instance:</p>
+<p>&#x53C2;&#x8003; <a href="http://robertpenner.com/easing/" target="_blank">Robert Penner&apos;s easing equations</a>.</p>
+<h2 id="&#x52A8;&#x753B;&#x56DE;&#x8C03;">&#x52A8;&#x753B;&#x56DE;&#x8C03;</h2>
+<p><code>onProgress</code>&#x548C;<code>onComplete</code>&#x56DE;&#x8C03;&#x5BF9;&#x4E8E;&#x5916;&#x90E8;&#x64CD;&#x4F5C;&#x540C;&#x6B65;&#x5230;&#x56FE;&#x8868;&#x52A8;&#x753B;&#xFF0C;&#x56DE;&#x8C03;&#x4F20;&#x9012;&#x4E00;&#x4E2A;<code>Chart.Animation</code>&#x5B9E;&#x4F8B;&#xFF1A;</p>
 <pre><code class="lang-javascript">{
-    <span class="hljs-comment">// Chart object</span>
+    <span class="hljs-comment">// Chart &#x5BF9;&#x8C61;</span>
     chart: Chart,
 
-    <span class="hljs-comment">// Current Animation frame number</span>
+    <span class="hljs-comment">// &#x5F53;&#x524D;&#x52A8;&#x753B;&#x5E27;&#x6570;</span>
     currentStep: <span class="hljs-built_in">Number</span>,
 
-    <span class="hljs-comment">// Number of animation frames</span>
+    <span class="hljs-comment">// &#x52A8;&#x753B;&#x5E27;&#x6570;</span>
     numSteps: <span class="hljs-built_in">Number</span>,
 
-    <span class="hljs-comment">// Animation easing to use</span>
+    <span class="hljs-comment">// easing&#x52A8;&#x753B;&#x4F7F;&#x7528;</span>
     easing: <span class="hljs-built_in">String</span>,
 
-    <span class="hljs-comment">// Function that renders the chart</span>
+    <span class="hljs-comment">// &#x7ED8;&#x5236;&#x56FE;&#x8868;</span>
     render: <span class="hljs-built_in">Function</span>,
 
-    <span class="hljs-comment">// User callback</span>
+    <span class="hljs-comment">// &#x4F7F;&#x7528;&#x56DE;&#x8C03;</span>
     onAnimationProgress: <span class="hljs-built_in">Function</span>,
 
-    <span class="hljs-comment">// User callback</span>
+    <span class="hljs-comment">// &#x4F7F;&#x7528;&#x56DE;&#x8C03;</span>
     onAnimationComplete: <span class="hljs-built_in">Function</span>
 }
 </code></pre>
-<p>The following example fills a progress bar during the chart animation.</p>
+<p>&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#x5728;&#x56FE;&#x8868;&#x52A8;&#x753B;&#x671F;&#x95F4;&#x586B;&#x5145;&#x8FDB;&#x5EA6;&#x6761;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -953,7 +953,7 @@
     }
 });
 </code></pre>
-<p>Another example usage of these callbacks can be found on <a href="https://github.com/chartjs/Chart.js/blob/master/samples/animation/progress-bar.html" target="_blank">Github</a>: this sample displays a progress bar showing how far along the animation is.</p>
+<p>&#x8FD9;&#x4E9B;&#x56DE;&#x8C03;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x5728;<a href="https://github.com/chartjs/Chart.js/blob/master/samples/animation/progress-bar.html" target="_blank">Github</a>&#x4E0A;&#x627E;&#x5230;&#xFF1A;&#x8BE5;&#x793A;&#x4F8B;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x8FDB;&#x5EA6;&#x6761;&#xFF0C;&#x663E;&#x793A;&#x52A8;&#x753B;&#x7684;&#x8DDD;&#x79BB;&#x3002;</p>
 
                                 
                                 </section>
@@ -997,7 +997,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"动画","level":"1.4.1","depth":2,"next":{"title":"布局","level":"1.4.2","depth":2,"path":"configuration/layout.md","ref":"configuration/layout.md","articles":[]},"previous":{"title":"图表配置","level":"1.4","depth":1,"path":"configuration/README.md","ref":"configuration/README.md","articles":[{"title":"动画","level":"1.4.1","depth":2,"path":"configuration/animations.md","ref":"configuration/animations.md","articles":[]},{"title":"布局","level":"1.4.2","depth":2,"path":"configuration/layout.md","ref":"configuration/layout.md","articles":[]},{"title":"图例","level":"1.4.3","depth":2,"path":"configuration/legend.md","ref":"configuration/legend.md","articles":[]},{"title":"标题","level":"1.4.4","depth":2,"path":"configuration/title.md","ref":"configuration/title.md","articles":[]},{"title":"提示","level":"1.4.5","depth":2,"path":"configuration/tooltip.md","ref":"configuration/tooltip.md","articles":[]},{"title":"元素","level":"1.4.6","depth":2,"path":"configuration/elements.md","ref":"configuration/elements.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"configuration/animations.md","mtime":"2017-05-12T06:18:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-12T09:32:33.835Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"动画","level":"1.4.1","depth":2,"next":{"title":"布局","level":"1.4.2","depth":2,"path":"configuration/layout.md","ref":"configuration/layout.md","articles":[]},"previous":{"title":"图表配置","level":"1.4","depth":1,"path":"configuration/README.md","ref":"configuration/README.md","articles":[{"title":"动画","level":"1.4.1","depth":2,"path":"configuration/animations.md","ref":"configuration/animations.md","articles":[]},{"title":"布局","level":"1.4.2","depth":2,"path":"configuration/layout.md","ref":"configuration/layout.md","articles":[]},{"title":"图例","level":"1.4.3","depth":2,"path":"configuration/legend.md","ref":"configuration/legend.md","articles":[]},{"title":"标题","level":"1.4.4","depth":2,"path":"configuration/title.md","ref":"configuration/title.md","articles":[]},{"title":"提示","level":"1.4.5","depth":2,"path":"configuration/tooltip.md","ref":"configuration/tooltip.md","articles":[]},{"title":"元素","level":"1.4.6","depth":2,"path":"configuration/elements.md","ref":"configuration/elements.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"configuration/animations.md","mtime":"2017-05-15T03:14:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T03:58:40.618Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
