@@ -842,8 +842,8 @@
                                 <h1 id="&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;">&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;</h1>
 <p>&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x4E0E;&#x56FE;&#x5F62;&#x60AC;&#x505C;&#x6216;&#x5DE5;&#x5177;&#x63D0;&#x793A;&#x7684;&#x4EA4;&#x4E92;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x5F0F;&#x3002;</p>
 <p>&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#x5C06;&#x5728;&#x4E0B;&#x9762;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x4E0E;&#x4EA4;&#x70B9;&#x8BBE;&#x7F6E;&#x7684;&#x7ED3;&#x5408;&#x65B9;&#x5F0F;&#x3002;</p>
-<h2 id="&#x70B9;">&#x70B9;</h2>
-<p>Finds all of the items that intersect the point.</p>
+<h2 id="&#x4EA4;&#x53C9;&#x70B9;">&#x4EA4;&#x53C9;&#x70B9;</h2>
+<p>&#x663E;&#x793A;&#x4EA4;&#x53C9;&#x70B9;&#x4E0A;&#x7684;&#x6570;&#x636E;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -855,7 +855,8 @@
 })
 </code></pre>
 <h2 id="nearest">nearest</h2>
-<p>Gets the item that is nearest to the point. The nearest item is determined based on the distance to the center of the chart item (point, bar). If 2 or more items are at the same distance, the one with the smallest area is used. If <code>intersect</code> is true, this is only triggered when the mouse position intersects an item in the graph. This is very useful for combo charts where points are hidden behind bars.</p>
+<p>&#x83B7;&#x53D6;&#x6700;&#x63A5;&#x8FD1;&#x70B9;&#x7684;&#x9879;&#x76EE;&#x3002;&#x6700;&#x8FD1;&#x7684;&#x9879;&#x76EE;&#x662F;&#x6839;&#x636E;&#x4E0E;&#x56FE;&#x8868;&#x9879;&#x76EE;&#x4E2D;&#x5FC3;&#x7684;&#x8DDD;&#x79BB;&#xFF08;point, bar&#xFF09;&#x786E;&#x5B9A;&#x7684;&#x3002;&#x5982;&#x679C;2&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x6761;&#x76EE;&#x8DDD;&#x79BB;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x6700;&#x5C0F;&#x9762;&#x79EF;&#x7684;&#x6761;&#x76EE;&#x3002;
+&#x5982;&#x679C;<code>intersect</code>&#x4E3A;true&#xFF0C;&#x5219;&#x4EC5;&#x5F53;&#x9F20;&#x6807;&#x4F4D;&#x7F6E;&#x4E0E;&#x56FE;&#x5F62;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x76F8;&#x4EA4;&#x65F6;&#x89E6;&#x53D1;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x7EC4;&#x5408;&#x56FE;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x5176;&#x4E2D;&#x70B9;&#x9690;&#x85CF;&#x5728;bars&#x540E;&#x9762;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -866,12 +867,12 @@
     }
 })
 </code></pre>
-<h2 id="single-deprecated">single (deprecated)</h2>
+<h2 id="single-&#x5DF2;&#x5E9F;&#x5F03;">single (&#x5DF2;&#x5E9F;&#x5F03;)</h2>
 <p>Finds the first item that intersects the point and returns it. Behaves like &apos;nearest&apos; mode with intersect = true.</p>
-<h2 id="label-deprecated">label (deprecated)</h2>
-<p>See <code>&apos;index&apos;</code> mode</p>
-<h2 id="index">index</h2>
-<p>Finds item at the same index. If the <code>intersect</code> setting is true, the first intersecting item is used to determine the index in the data. If <code>intersect</code> false the nearest item is used to determine the index. </p>
+<h2 id="label-&#x5DF2;&#x5E9F;&#x5F03;">label (&#x5DF2;&#x5E9F;&#x5F03;)</h2>
+<p>&#x53C2;&#x8003; <code>&apos;index&apos;</code> </p>
+<h2 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h2>
+<p>&#x67E5;&#x627E;&#x76F8;&#x540C;&#x7D22;&#x5F15;&#x9879;&#x3002;&#x5982;&#x679C;<code>intersect</code>&#x4E3A;true&#xFF0C;&#x5219;&#x7B2C;&#x4E00;&#x4E2A;&#x76F8;&#x4EA4;&#x9879;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x5982;&#x679C; <code>intersect</code>&#x4E3A;false&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x6700;&#x8FD1;&#x7684;&#x9879;&#x6765;&#x786E;&#x5B9A;&#x7D22;&#x5F15;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -882,10 +883,10 @@
     }
 })
 </code></pre>
-<h2 id="x-axis-deprecated">x-axis (deprecated)</h2>
-<p>Behaves like <code>&apos;index&apos;</code> mode with <code>intersect = false</code>.</p>
-<h2 id="dataset">dataset</h2>
-<p>Finds items in the same dataset. If the <code>intersect</code> setting is true, the first intersecting item is used to determine the index in the data. If <code>intersect</code> false the nearest item is used to determine the index.</p>
+<h2 id="x&#x8F74;-&#x5DF2;&#x5E9F;&#x5F03;">x&#x8F74; (&#x5DF2;&#x5E9F;&#x5F03;)</h2>
+<p>&#x7C7B;&#x4F3C;&#x8BBE;&#x7F6E;<code>intersect = false</code>&#x7684;<code>&apos;index&apos;</code>&#x6A21;&#x5F0F;</p>
+<h2 id="&#x6570;&#x636E;&#x96C6;">&#x6570;&#x636E;&#x96C6;</h2>
+<p>&#x67E5;&#x627E;&#x76F8;&#x540C;&#x7D22;&#x5F15;&#x9879;&#x3002;&#x5982;&#x679C;<code>intersect</code>&#x4E3A;true&#xFF0C;&#x5219;&#x7B2C;&#x4E00;&#x4E2A;&#x76F8;&#x4EA4;&#x9879;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x5982;&#x679C; <code>intersect</code>&#x4E3A;false&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x6700;&#x8FD1;&#x7684;&#x9879;&#x6765;&#x786E;&#x5B9A;&#x7D22;&#x5F15;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -897,7 +898,7 @@
 })
 </code></pre>
 <h2 id="x">x</h2>
-<p>Returns all items that would intersect based on the <code>X</code> coordinate of the position only. Would be useful for a vertical cursor implementation. Note that this only applies to cartesian charts</p>
+<p>&#x8FD4;&#x56DE;&#x57FA;&#x4E8E;<code>X</code>&#x5750;&#x6807;&#x76F8;&#x4EA4;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;&#x3002;&#x5BF9;&#x4E8E;&#x5782;&#x76F4;&#x6E38;&#x6807;&#x5B9E;&#x73B0;&#x5C06;&#x662F;&#x6709;&#x7528;&#x7684;&#x3002;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x7B1B;&#x5361;&#x5C14;&#x56FE;&#x8868;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -909,7 +910,7 @@
 })
 </code></pre>
 <h2 id="y">y</h2>
-<p>Returns all items that would intersect based on the <code>Y</code> coordinate of the position. This would be useful for a horizontal cursor implementation. Note that this only applies to cartesian charts.</p>
+<p>&#x8FD4;&#x56DE;&#x57FA;&#x4E8E;<code>Y</code>&#x5750;&#x6807;&#x76F8;&#x4EA4;&#x7684;&#x6240;&#x6709;&#x9879;&#x76EE;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x6C34;&#x5E73;&#x5149;&#x6807;&#x5B9E;&#x73B0;&#x5C06;&#x662F;&#x6709;&#x7528;&#x7684;&#x3002;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x7B1B;&#x5361;&#x5C14;&#x56FE;&#x8868;&#x3002;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> chart = <span class="hljs-keyword">new</span> Chart(ctx, {
     type: <span class="hljs-string">&apos;line&apos;</span>,
     data: data,
@@ -963,7 +964,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"方法","level":"1.3.2.2","depth":3,"next":{"title":"颜色","level":"1.3.3","depth":2,"path":"general/colors.md","ref":"general/colors.md","articles":[]},"previous":{"title":"事件","level":"1.3.2.1","depth":3,"path":"general/interactions/events.md","ref":"general/interactions/events.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"general/interactions/modes.md","mtime":"2017-05-12T09:28:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-15T07:49:58.696Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"方法","level":"1.3.2.2","depth":3,"next":{"title":"颜色","level":"1.3.3","depth":2,"path":"general/colors.md","ref":"general/colors.md","articles":[]},"previous":{"title":"事件","level":"1.3.2.1","depth":3,"path":"general/interactions/events.md","ref":"general/interactions/events.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchorjs":{"icon":"#","placement":"left","visible":"always"},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chartjs":{"defaults":null},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"chartjs","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.2"},"file":{"path":"general/interactions/modes.md","mtime":"2017-05-26T03:05:52.459Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-26T03:43:30.797Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
