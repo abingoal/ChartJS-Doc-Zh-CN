@@ -2,8 +2,6 @@
 
 > 本文档是翻译自[ChartJS](https://github.com/chartjs/Chart.js/tree/v2.5.0/docs)官方仓库中的英文说明文档,版本为 2.5.0。
 
-> 文档还在翻译中...
-
 [临时预览地址](http://chartjs-doc.abingoal.com/)
 
 ## 翻译进度
