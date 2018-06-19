@@ -1,0 +1,27 @@
+{
+	"root": "./docs",
+	"author": "abingoal",
+	"description": "Chart.js中文文档",
+	"gitbook": "3.2.2",
+	"language": "zh-hans",
+	"plugins": ["anchorjs", "chartjs", "ga", "github"],
+	"pluginsConfig": {
+		"anchorjs": {
+			"icon": "#",
+			"placement": "left",
+			"visible": "always"
+		},
+		"ga": {
+			"token": "UA-99066350-1"
+		},
+		"theme-default": {
+			"showLevel": false,
+			"styles": {
+				"website": "style.css"
+			}
+		},
+		"github": {
+			"url": "https://chartjs-doc.abingoal.com/"
+		}
+	}
+}
