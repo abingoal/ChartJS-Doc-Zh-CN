@@ -486,6 +486,19 @@
             
         </li>
     
+        <li class="chapter " data-level="5.9" data-path="../charts/area.html">
+            
+                <a href="../charts/area.html">
+            
+                    
+                    区域图
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -840,9 +853,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x989C;&#x8272;">&#x989C;&#x8272;</h1>
-<p>&#x5F53;&#x5411;Chart&#x9009;&#x9879;&#x63D0;&#x4F9B;&#x989C;&#x8272;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x989C;&#x8272;&#x6307;&#x5B9A;&#x4E3A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x3001;RGB&#x6216;HSL&#x3002; 
+<p>&#x5F53;&#x5411;Chart&#x9009;&#x9879;&#x63D0;&#x4F9B;&#x989C;&#x8272;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#x3002; &#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x989C;&#x8272;&#x6307;&#x5B9A;&#x4E3A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x3001;RGB&#x6216;HSL&#x3002;
 &#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A;&#x989C;&#x8272;&#xFF0C;Chart.js&#x5C06;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x9ED8;&#x8BA4;&#x989C;&#x8272;&#x3002; &#x6B64;&#x989C;&#x8272;&#x5B58;&#x50A8;&#x5728;<code>Chart.defaults.global.defaultColor</code>&#x4E2D;&#x3002;
-&#x521D;&#x59CB;&#x503C;&#x4E3A;<code>rgba&#xFF08;0&#xFF0C;0&#xFF0C;0&#xFF0C;0.1&#xFF09;</code>&#x3002; &#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x9012;<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasGradient" target="_blank">CanvasGradient</a>&#x5BF9;&#x8C61;&#x3002; &#x5728;&#x4F20;&#x9012;&#x5230;&#x56FE;&#x8868;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x5B83;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+&#x521D;&#x59CB;&#x503C;&#x4E3A;<code>rgba&#xFF08;0&#xFF0C;0&#xFF0C;0&#xFF0C;0.1&#xFF09;</code>&#x3002;</p>
+<p>&#x60A8;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x9012;<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasGradient" target="_blank">CanvasGradient</a>&#x5BF9;&#x8C61;&#x3002; &#x5728;&#x4F20;&#x9012;&#x5230;&#x56FE;&#x8868;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA;&#x5B83;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;&#x6548;&#x679C;&#x3002;</p>
 <h2 id="&#x56FE;&#x6848;&#x548C;&#x6E10;&#x53D8;">&#x56FE;&#x6848;&#x548C;&#x6E10;&#x53D8;</h2>
 <p>&#x4E00;&#x4E2A;&#x66FF;&#x4EE3;&#x9009;&#x9879;&#x662F;&#x4F20;&#x9012;<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasPattern" target="_blank">CanvasPattern</a>&#x6216;<a href="https://developer.mozilla.org/en/docs/Web/API/CanvasGradient" target="_blank">CanvasGradient</a>&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x989C;&#x8272;&#x3002;</p>
 <p>&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x586B;&#x5145;&#x56FE;&#x6848;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;:</p>
@@ -921,7 +935,7 @@ img.onload = <span class="hljs-function"><span class="hljs-keyword">function</sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"颜色(colors)","level":"3.3","depth":1,"next":{"title":"字体(fonts)","level":"3.4","depth":1,"path":"general/fonts.md","ref":"general/fonts.md","articles":[]},"previous":{"title":"模式(modes)","level":"3.2.2","depth":2,"path":"general/interactions/modes.md","ref":"general/interactions/modes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs","ga","github"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://chartjs-doc.abingoal.com/"},"chartjs":{"defaults":null},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-99066350-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"left","visible":"always"}},"theme":"default","author":"abingoal","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"3.2.2","description":"Chart.js中文文档"},"file":{"path":"general/colors.md","mtime":"2018-02-02T08:48:16.548Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-06-19T07:42:37.060Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"颜色(colors)","level":"3.3","depth":1,"next":{"title":"字体(fonts)","level":"3.4","depth":1,"path":"general/fonts.md","ref":"general/fonts.md","articles":[]},"previous":{"title":"模式(modes)","level":"3.2.2","depth":2,"path":"general/interactions/modes.md","ref":"general/interactions/modes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","chartjs","ga","github"],"root":"./docs","styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://chartjs-doc.abingoal.com/"},"chartjs":{"defaults":null},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":"auto","token":"UA-99066350-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"style.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"left","visible":"always"}},"theme":"default","author":"abingoal","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"3.2.2","description":"Chart.js中文文档"},"file":{"path":"general/colors.md","mtime":"2018-06-22T08:19:13.445Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-06-22T08:22:28.158Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
